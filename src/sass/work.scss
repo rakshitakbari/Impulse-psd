@@ -1,0 +1,95 @@
+#work{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @include media-breakpoint-down(sm){
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+    .container {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        @include media-breakpoint-down(sm){
+            max-width: unset;
+            padding-right: 0;
+            margin: unset;
+        }
+        .row {
+            margin-right: -15px;
+            margin-left: -15px;
+            .title{
+                padding: 100px 60px 60px 60px;
+                @include media-breakpoint-down(sm){
+                    padding: 40px;
+                }
+            }
+            h2{
+                color: #202020;
+                line-height: 20px;
+                padding-bottom: 30px;
+                font-size: 48px;
+                font-weight: bold;
+                font-family: $font-family;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            hr{
+                border-color: #e0e0e0;
+                margin: 0 auto 20px auto;
+                width: 100px !important;
+            }
+            p{
+                padding-top: 14px;
+                padding-bottom: 30px;
+                letter-spacing: 1px;
+                line-height: 28px;
+                margin: 0 0 10px;
+                color: #606060;
+                font-family: $font-family;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            .col-xs-7, .col-xs-8, .col-xs-9 {
+                position: relative;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            @media (min-width: 992px){
+                .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+                    float: left;
+                }
+            }
+            .bg-black {
+                background-color: #303030;
+                color: $white;
+                text-align: center;
+            }
+            .bg-red{
+                background-color: $theme-color;
+                color: $white;
+                text-align: center;
+            }    
+            .fa {
+                color: $white;
+                cursor: pointer;
+                font-size: 40px;
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                text-align: center;
+                transition: all 0.4s ease-in-out;
+                margin-top: 40px;
+            }
+            h3 {
+                padding-bottom: 60px;
+                font-size: 30px;
+                font-weight: bold;
+                font-family: $font-family;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

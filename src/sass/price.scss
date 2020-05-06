@@ -1,0 +1,95 @@
+#price{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @include media-breakpoint-down(sm){
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .title{
+        padding-bottom: 40px;
+        text-align: center;
+        h2{
+            color: #202020;
+            font-size: 48px;
+            font-weight: bold;
+            font-family: $font-family;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        hr{
+            border-color: #e0e0e0;
+            margin: 0 auto 20px auto;
+            width: 100px !important;
+        }
+        p{
+            padding-top: 14px;
+            padding-bottom: 30px;
+            letter-spacing: 1px;
+            line-height: 28px;
+            color: #606060;
+            font-family: $font-family;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    .plan {
+        background: $theme-color;
+        color: $white;
+        padding: 0 0 60px 0;
+        text-align: center;
+        .plan_title {
+            background-color: #f6f6f6;
+            color: #202020;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            h3{
+                font-size: 30px;
+                font-family: $font-family;
+                font-weight: bold;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                color: #202020;
+            }
+        }
+        .plan_sub_title {
+            border-bottom: 1px solid #ffffff;
+            padding: 30px;
+            h2{
+                font-size: 48px;
+                font-family: $font-family;
+                font-weight: bold;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                line-height: 1.1;
+                color: $white;
+            }
+            small{
+                font-size: 85%;
+                color: $white;
+                font-family: $font-family;
+            }
+        }
+        ul {
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 10px;
+            li {
+                display: block;
+                font-family: $font-family;
+                font-size: 16px;
+                padding: 40px 0 10px 0;
+            }
+        }
+        .btn {
+            background: $white;
+            border: none;
+            border-radius: 0;
+            color: #202020;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 20px 40px;
+            transition: all 0.4s ease-in-out;
+            margin-top: 20px;
+        }
+    }
+}
